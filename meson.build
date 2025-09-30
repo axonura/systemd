@@ -13,6 +13,8 @@ project('systemd', 'c',
         meson_version : '>= 0.62.0',
 )
 
+project_root = meson.project_source_root()
+
 add_test_setup(
         'default',
         exclude_suites : ['clang-tidy', 'integration-tests'],
